@@ -1,5 +1,6 @@
 :root {
   --red-color: #F72210;
+  --yellow-color: #FFE401;
 }
 
 * {
@@ -8,15 +9,72 @@
   box-sizing: border-box;
 }
 
-.logo {
-  width: 15rem;
+  header {
+    position: relative;
+  }
+
+  .top-nav > p {
+    width: 10rem;
+    margin-top: 1rem;
+  }
+  
+  .logo {
+    width: 20rem;
+    height: 6rem;
+    position: absolute;
+    left: 30%;
+    top: 0;
+    
+  }
+  
+  .main-container {
+    width: 60rem;
+  }
+  
+  .top-nav {
+    background-color: var(--red-color);
+    width: 100%;
+    height: 6rem;
+  }
+
+  .top-nav p {
+    color: white;
+    margin-left: 1rem;
+  }
+
+  .btn-1{
+    background-color: var(--red-color);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  .btn-2 {
+    background-color: var(--yellow-color);
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0 0.4rem;
+    margin: 0 1rem;
+  }
+
+  .buttons i {
+    margin-right: 0.5rem;
+    display: none;
+  }
+  
+@media screen and (max-width: 992px) {
+  
+  .header {
+    width: 100%;
+  }
+  .container.main-container {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .buttons i {
+    display: inline;
+  }
 }
 
-.main-container {
-  width: 60rem;
-}
 
-.top-nav {
-  background-color: var(--red-color);
-  width: 100%;
-}
