@@ -20,130 +20,38 @@
 
 .top-nav {
   width: 100%;
+  background-color: var(--red-color) ;
 }
 
-/* header.row {
-  width: 100%;
-  margin: 0;
-}
-
-.main-container {
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-  width: 8rem;
-}
-
-.top-nav * {
-  display: block;
-}
-
-.top-nav {
-  background: var(--red-color);
-  padding: 0.8rem;
-  width: 100%;
-}
-
-.top-nav > div {
-  width: 100%;
-}
-
-.buttons * {
-  margin-right: 0.8rem;
-}
-
-.fas {
-  color: var(--white);
-}
-.fa-bars {
-  margin-right: 0;
-}
-
-.btn-1 {
-  background-color: var(--red-color);
-  border: none;
-  color: var(--white);
-  font-weight: bold;
-}
-
-.btn-2 {
+.subscribe-btn {
   background-color: var(--yellow-color);
+  border-radius: 0.5rem;
+  padding: 0 0.3rem;
+  font-size: 0.9rem;
+}
+
+.login {
+  background-color: var(--red-color);
   border: none;
-  border-radius: 0.7rem;
-  padding: 0.3rem 0.5rem;
-  font-size: 0.7rem;
+  color: var(--white);
   font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
+  height: 1.5rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
+  .brand {
+    width: 25rem;
+  }
+
+  .cta-btns {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
   .main-container {
-    width: 90%;
-    margin: 0 auto;
+    width: 1300px;
   }
-
-  .top-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 0;
-  }
-
-  .top-nav > p {
-    grid-column: 1/-1;
-    display: block;
-    width:100%
-    border: 1px solid green;
-  }
-
-  .top-nav > div {
-    grid-row: 2/-1;
-  }
-
-  .logo {
-    width: 20rem;
-    height: 6rem;
-  }
-} /* header { */
-/* position: relative;
- }
-
- .main-container {
-   margin: 0 auto;
- }
-
-
-
-.
-.main-container {
-  width: 60rem;
 }
-
-.top-nav {
-  display: block;
-  background-color: var(--red-color);
-  width: 100%;
-  height: 6rem;
-}
-
-.top-nav p {
-  color: white;
-  margin-left: 1rem;
-}
-
-.btn-1 {
-  background-color: var(--red-color);
-  color: white;
-  text-transform: uppercase;
-  border: none;
-}
-
-
-.buttons i {
-  margin-right: 0.5rem;
-  display: none;
-}
-.buttons i {
-  display: inline;
-} } */

@@ -19,30 +19,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-xl">
-      <div class="row top-nav-row">
-        <div class="top-nav bg-danger d-flex justify-content-between align-items-center p-2">
-          <a class="brand" href="#">
-            <img src="assets/logo.svg" alt="newsweek-logo">
-          </a>
-          
-          <div class="cta-btns d-flex justify-content-between align-items-center">
-            <a href="#" class="mr-3">
-              <i class="fas fa-user"></i>
+    <div class="container-fluid main-container">
+      <header class="row top-nav-row">
+        <div class="top-nav d-flex justify-content-between align-items-center p-2">
+           <div class="d-none d-lg-block ">
+             <p class="text-white font-weight-bold mt-3 ml-4"><i class="fas fa-cloud-sun-rain"></i> 7° San Miguel de Tucuman, AR ></p>
+             <p class="text-white ml-4">Wed, Jul 01, 2020</p>
+           </div>
+           <a class="brand" href="#">
+             <img src="assets/logo.svg" alt="newsweek-logo">
             </a>
-            
-            <button type="button" class="btn-warning mr-2 subscribe-btn">subscribe > </button>
-            
-          
-            <button  class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+            <div class="cta-btns d-flex justify-content-between align-items-center">
+              <button class="d-none d-md-block login text-uppercase mr-3">login</button>
+              <a href="#" class="mr-4 d-sm-block d-md-none">
+              <i class="fas fa-user"></i>
+              </a>
+              <button type="button" class="btn mr-2 subscribe-btn text-uppercase font-weight-bold">subscribe > </button>
+               <button  class="navbar-toggler d-block d-lg-none"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
               <i class="fas fa-bars"></i>
-            </button>
+             </button>
           
             
           </div>
@@ -51,10 +52,10 @@
           
 
           
-          </div>
+      </header>
         
-        </div>
     </div>
+    
     
   
 
