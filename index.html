@@ -19,22 +19,45 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid  container-lg main-container">
-      <header class="row">
-        <div class=" container-sm-fluid d-flex  top-nav">
-          <p class="d-none d-lg-inline"><i class="fas fa-cloud-rain"></i> 26°Lagos, NG ></p>
-          <div class="d-flex justify-content-between align-items-center">
-            <p class="d-none d-lg-block">Tue, Jun 30, 2020</p>
-            <img class="logo" src="assets/logo.svg" alt="newsweek-logo" />
-            <div class="buttons d-flex align-items-center">
-              <i class="fas fa-user d-sm-none"></i>
-            <button class="btn-1 d-none d-sm-block text-uppercase" type="button">Login</button>
-            <button class="btn-2 text-uppercase" type="button">Subscribe ></button>
-            <i class="fas fa-bars"></i>
+    <div class="container-xl">
+      <div class="row top-nav-row">
+        <div class="top-nav bg-danger d-flex justify-content-between align-items-center p-2">
+          <a class="brand" href="#">
+            <img src="assets/logo.svg" alt="newsweek-logo">
+          </a>
+          
+          <div class="cta-btns d-flex justify-content-between align-items-center">
+            <a href="#" class="mr-3">
+              <i class="fas fa-user"></i>
+            </a>
+            
+            <button type="button" class="btn-warning mr-2 subscribe-btn">subscribe > </button>
+            
+          
+            <button  class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+          
+            
           </div>
         </div>
-      </header>
+          
+          
+
+          
+          </div>
+        
+        </div>
     </div>
+    
+  
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
