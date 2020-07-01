@@ -5,6 +5,8 @@
   --black: #000000;
   --grey: #e4e1e1;
   --light-grey: #F4F5F6;
+  --dark-grey: #9A9A9A;
+
 }
 
 * {
@@ -59,11 +61,25 @@ li {
   bottom: 1rem;
 }
 
-.container-1{
-  width:100vw;
-
+.container-1 {
+  padding: 1rem;
 }
 
+.article-header {
+  position: relative;
+}
+
+.image-banner {
+  position: absolute;
+  bottom: 0rem;
+  padding: 0.3rem 1.2rem;
+  background-color: var(--grey);
+}
+
+.section-title {
+  font-size: 1rem;
+  color:var(--dark-grey);
+}
 
 @media screen and (min-width: 992px) {
   .brand {
