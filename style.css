@@ -59,6 +59,11 @@ li {
   bottom: 1rem;
 }
 
+.container-1{
+  width:100vw;
+
+}
+
 
 @media screen and (min-width: 992px) {
   .brand {
