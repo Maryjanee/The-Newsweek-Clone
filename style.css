@@ -2,12 +2,17 @@
   --red-color: #f72210;
   --yellow-color: #ffe401;
   --white: #fff;
+  --black: #000000;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+li {
+  list-style: none;
 }
 
 .brand {
@@ -50,8 +55,8 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .main-container {
-    width: 1300px;
+    width: 1200px;
   }
 }
