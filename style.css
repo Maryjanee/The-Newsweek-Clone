@@ -8,7 +8,8 @@
   --dark-grey: #9a9a9a;
   --line-grey: #dddddd;
   --text-color: #595959;
-  --blue-color: #1C87FB;
+  --blue-color: #1c87fb;
+  --form-grey: #f4f5f6;
 }
 
 * {
@@ -100,7 +101,8 @@ p {
   line-height: 1.1rem;
 }
 
-.author, .author span {
+.author,
+.author span {
   font-size: 0.9rem;
 }
 
@@ -119,17 +121,15 @@ p {
 
 .debate-line-1 {
   border: 2px solid var(--red-color);
-
 }
 
 .debate-line-2 {
-  border: 2px solid var(--blue-color) ;
+  border: 2px solid var(--blue-color);
 }
 
 .debate-vs span {
   border: 0.04375rem solid var(--grey);
   margin-bottom: 1px;
-
 }
 
 .debate-vs div {
@@ -147,6 +147,25 @@ p {
   font-size: 0.9rem;
 }
 
+.newsweek-logo {
+  width: 1.8rem;
+}
+
+form {
+  padding: 2rem;
+  background: var(--form-grey);
+  width: 85%;
+  margin: 0 auto;
+}
+
+form input,
+form button {
+  width: 84%;
+}
+
+form p {
+  font-size: 1.2rem;
+}
 
 @media screen and (min-width: 768px) {
   .my-turn {
@@ -156,7 +175,6 @@ p {
   .article-text {
     font-size: 0.9rem;
   }
-
 }
 
 @media screen and (min-width: 992px) {
