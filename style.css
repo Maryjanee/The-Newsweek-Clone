@@ -79,9 +79,19 @@ li {
   color: var(--dark-grey);
 }
 
-.my-turn {
-  border: 1px solid green;
+
+.mt-title {
+  position: relative;
+  left: -0.7rem;
 }
+
+@media screen and (min-width: 768px) {
+  .my-turn {
+    margin-bottom: 2rem;
+  }
+}
+
+
 @media screen and (min-width: 992px) {
   .brand {
     width: 23rem;
@@ -135,6 +145,7 @@ li {
   .navbar-2 .nav-link {
     font-size: 1rem;
   }
+
 }
 
 @media screen and (min-width: 1300px) {
