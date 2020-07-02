@@ -4,9 +4,8 @@
   --white: #fff;
   --black: #000000;
   --grey: #e4e1e1;
-  --light-grey: #F4F5F6;
-  --dark-grey: #9A9A9A;
-
+  --light-grey: #f4f5f6;
+  --dark-grey: #9a9a9a;
 }
 
 * {
@@ -54,7 +53,6 @@ li {
   padding: 0;
 }
 
-
 .navbars {
   width: 100%;
   position: relative;
@@ -78,9 +76,12 @@ li {
 
 .section-title {
   font-size: 1rem;
-  color:var(--dark-grey);
+  color: var(--dark-grey);
 }
 
+.my-turn {
+  border: 1px solid green;
+}
 @media screen and (min-width: 992px) {
   .brand {
     width: 23rem;
@@ -116,10 +117,8 @@ li {
     margin-bottom: 0.4rem;
   }
 
-
   .navbar-1 {
     min-width: 80%;
-    
   }
 
   .navbar-1 ul {
@@ -127,18 +126,15 @@ li {
     min-width: 93%;
     background-color: var(--white);
   }
-  
 
   .navbar-2 {
-    border-top: 2px solid var(--light-grey) ;
+    border-top: 2px solid var(--light-grey);
     border-bottom: 2px solid var(--light-grey);
   }
 
   .navbar-2 .nav-link {
     font-size: 1rem;
   }
-
-
 }
 
 @media screen and (min-width: 1300px) {
