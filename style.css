@@ -8,6 +8,7 @@
   --dark-grey: #9a9a9a;
   --line-grey: #dddddd;
   --text-color: #595959;
+  --blue-color: #1C87FB;
 }
 
 * {
@@ -99,10 +100,53 @@ p {
   line-height: 1.1rem;
 }
 
+.author, .author span {
+  font-size: 0.9rem;
+}
+
+.debate-img {
+  width: 85%;
+}
+
 .article-text {
   color: var(--text-color);
   font-size: 1.1rem;
 }
+
+.debate-title {
+  line-height: 1.2rem;
+}
+
+.debate-line-1 {
+  border: 2px solid var(--red-color);
+
+}
+
+.debate-line-2 {
+  border: 2px solid var(--blue-color) ;
+}
+
+.debate-vs span {
+  border: 0.04375rem solid var(--grey);
+  margin-bottom: 1px;
+
+}
+
+.debate-vs div {
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  left: 45%;
+  bottom: 1rem;
+  background-color: var(--black);
+}
+
+.debate-vs p {
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
 
 @media screen and (min-width: 768px) {
   .my-turn {
