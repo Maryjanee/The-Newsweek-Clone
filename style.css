@@ -96,16 +96,23 @@ p {
 
 .article-links {
   font-size: 1.1rem;
+  line-height: 1.1rem;
 }
 
 .article-text {
   color: var(--text-color);
+  font-size: 1.1rem;
 }
 
 @media screen and (min-width: 768px) {
   .my-turn {
     margin-bottom: 2rem;
   }
+
+  .article-text {
+    font-size: 0.9rem;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -159,6 +166,10 @@ p {
   }
 
   .navbar-2 .nav-link {
+    font-size: 1rem;
+  }
+
+  .article-text {
     font-size: 1rem;
   }
 }
