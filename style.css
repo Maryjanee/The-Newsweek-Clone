@@ -179,7 +179,7 @@ form button {
 
 .form {
   background-color: var(--form-grey);
-  width: 23rem;
+  width: 18rem;
 }
 
 .fh-title p {
@@ -236,6 +236,10 @@ form button {
   line-height: 1.4rem;
 }
 
+.section-image {
+  height: 23rem;
+}
+
 
 @media screen and (min-width: 768px) {
   .my-turn {
@@ -244,6 +248,18 @@ form button {
 
   .article-text {
     font-size: 0.9rem;
+  }
+
+  .section-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+  }
+
+  .form {
+    background-color: var(--form-grey);
+    width: 23rem;
   }
 }
 
@@ -317,6 +333,8 @@ form button {
   .form p {
     width: 90%;
   }
+
+  
 }
 
 @media screen and (min-width: 1300px) {
