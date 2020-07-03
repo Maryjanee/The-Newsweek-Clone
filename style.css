@@ -19,14 +19,6 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-body {
-  background-color: var(--light-grey);
-}
-
-.main-container {
-  background-color: var(--white);
-}
-
 li {
   list-style: none;
 }
@@ -162,8 +154,6 @@ p {
 form {
   padding: 2rem;
   background: var(--form-grey);
-  width: 85%;
-  margin: 0 auto;
 }
 
 form input,
