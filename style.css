@@ -202,10 +202,9 @@ form button {
   margin: 0;
 }
 
-
 .row-height {
   height: 27.166rem;
-} 
+}
 
 .section-image-1 {
   background: url("./assets/itm-2.webp");
@@ -240,6 +239,17 @@ form button {
   height: 23rem;
 }
 
+.more-section-links {
+  font-size: 1rem;
+}
+
+.more-section-image {
+  width: 100%;
+}
+
+.more-stories-heading {
+  color: var(--red-color);
+}
 
 @media screen and (min-width: 768px) {
   .my-turn {
@@ -334,7 +344,9 @@ form button {
     width: 90%;
   }
 
-  
+  .more-section-image {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1300px) {
