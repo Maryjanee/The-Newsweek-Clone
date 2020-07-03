@@ -30,10 +30,11 @@ p {
 body {
   background: var(--light-grey);
 }
+
 main {
   height: 100%;
 }
-.main-container {
+.container-1 {
   background: var(--white);
   height: 100%;
 }
@@ -200,6 +201,11 @@ form button {
   margin: 0;
 }
 
+
+.row-height {
+  height: 27.166rem;
+} 
+
 .section-image-1 {
   background: url("./assets/itm-2.webp");
 }
@@ -214,7 +220,7 @@ form button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 70%;
+  height: 80%;
 }
 
 .section-tabs p:first-child {
@@ -228,6 +234,7 @@ form button {
 .section-links {
   line-height: 1.4rem;
 }
+
 
 @media screen and (min-width: 768px) {
   .my-turn {
