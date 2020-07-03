@@ -149,21 +149,36 @@ p {
 
 .newsweek-logo {
   width: 1.8rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
-form {
-  padding: 2rem;
-  background: var(--form-grey);
+.form-header p {
+  width: 100%;
+  font-size: 1.1rem;
 }
 
-form input,
 form button {
-  width: 84%;
+  background-color: var(--red-color);
+  color: var(--white);
+  border: none;
 }
 
-form p {
-  font-size: 1.2rem;
+.form {
+  background-color: var(--form-grey);
+  width: 23rem;
 }
+
+.fh-title p {
+  width: 90%;
+}
+
+.form input {
+  border: 1px solid var(--grey);
+  padding: 0.2rem 0.1rem;
+}
+
+
 
 @media screen and (min-width: 768px) {
   .my-turn {
@@ -232,14 +247,27 @@ form p {
   .article-text {
     font-size: 1rem;
   }
+
+  .newsweek-logo {
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form p {
+    width: 90%;
+  }
+
 }
 
 @media screen and (min-width: 1300px) {
   .main-container {
     width: 1300px;
   }
-  .more-stories {
-  }
+
 
   .article-text {
     font-size: 1rem;
