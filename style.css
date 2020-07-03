@@ -30,9 +30,12 @@ p {
 body {
   background: var(--light-grey);
 }
-
+main {
+  height: 100%;
+}
 .main-container {
   background: var(--white);
+  height: 100%;
 }
 
 .brand {
