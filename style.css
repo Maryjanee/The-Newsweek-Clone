@@ -27,6 +27,14 @@ p {
   line-height: 1.2rem;
 }
 
+body {
+  background: var(--light-grey);
+}
+
+.main-container {
+  background: var(--white);
+}
+
 .brand {
   width: 8rem;
 }
@@ -177,8 +185,46 @@ form button {
   border: 1px solid var(--grey);
   padding: 0.2rem 0.1rem;
 }
+.section-titles {
+  display: flex;
+  width: 30%;
+  margin: 0 auto;
+  align-items: center;
+}
+.section-titles img {
+  width: 2rem;
+  height: 1.8rem;
+  margin: 0;
+}
 
+.section-image-1 {
+  background: url("./assets/itm-2.webp");
+}
+.section-image-2 {
+  background: url("./assets/itm-3.webp");
+}
+.section-image-3 {
+  background: url("./assets/itm-4.webp");
+}
 
+.section-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70%;
+}
+
+.section-tabs p:first-child {
+  background: var(--red-color);
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.section-tabs p:last-child {
+  color: var(--red-color);
+}
+.section-links {
+  line-height: 1.4rem;
+}
 
 @media screen and (min-width: 768px) {
   .my-turn {
@@ -260,14 +306,12 @@ form button {
   .form p {
     width: 90%;
   }
-
 }
 
 @media screen and (min-width: 1300px) {
   .main-container {
     width: 1300px;
   }
-
 
   .article-text {
     font-size: 1rem;
