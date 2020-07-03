@@ -34,7 +34,8 @@ body {
 main {
   height: 100%;
 }
-.container-1 {
+
+.main-container {
   background: var(--white);
   height: 100%;
 }
@@ -220,7 +221,7 @@ form button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 80%;
+  height: 60%;
 }
 
 .section-tabs p:first-child {
