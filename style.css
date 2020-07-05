@@ -247,8 +247,13 @@ form button {
   width: 100%;
 }
 
-.more-stories-heading {
+.more-stories-heading,
+.bottom-section-heading h4 {
   color: var(--red-color);
+}
+
+.bottom-section-heading h4 {
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
