@@ -171,10 +171,12 @@ main {
   font-size: 1.1rem;
 }
 
-form button {
+.nw-button {
   background-color: var(--red-color);
   color: var(--white);
   border: none;
+  font-size: 1.1rem;
+  border-radius: 3px;
 }
 
 .form {
@@ -254,6 +256,42 @@ form button {
 
 .bottom-section-heading h4 {
   font-size: 1rem;
+}
+
+.id-stories {
+  height: 18rem;
+  padding-left: 5%;
+
+}
+
+.lsl-right {
+  padding-left: 5%;
+}
+
+.cover-img-1, .cover-img-2 {
+ width: 11rem;
+ height: 15rem;
+}
+
+.ci2-container {
+  position: relative;
+  right: 6rem;
+  padding-top: 10%;
+}
+
+.ls-left {
+  background-color: var(--light-grey);
+}
+
+.ls-right .row {
+  height: 20rem;
+}
+
+
+.ts5-img {
+ background-image: url(./assets/last-article-img.png);
+ background-position: center;
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -352,6 +390,16 @@ form button {
   .more-section-image {
     width: 100%;
   }
+
+  .lsl-right {
+    padding-left: 10%;
+  }
+
+  .id-stories {
+    height: 18rem;
+    padding-left: 5%;
+  
+  }
 }
 
 @media screen and (min-width: 1300px) {
@@ -361,5 +409,13 @@ form button {
 
   .article-text {
     font-size: 1rem;
+  }
+
+  .id-stories {
+    height: 18rem;
+    padding-left: 6%;
+  
+  }
+
   }
 }
