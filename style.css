@@ -2,11 +2,11 @@
   --red-color: #f72210;
   --yellow-color: #ffe401;
   --white: #fff;
-  --black: #000000;
+  --black: #000;
   --grey: #e4e1e1;
   --light-grey: #f4f5f6;
   --dark-grey: #9a9a9a;
-  --line-grey: #dddddd;
+  --line-grey: #dddd;
   --text-color: #595959;
   --blue-color: #1c87fb;
   --form-grey: #f4f5f6;
@@ -33,6 +33,10 @@ body {
 
 main {
   height: 100%;
+}
+
+footer p {
+  font-size: 0.9rem;
 }
 
 .main-container {
@@ -90,7 +94,7 @@ main {
 
 .image-banner {
   position: absolute;
-  bottom: 0rem;
+  bottom: 0;
   padding: 0.3rem 1.2rem;
   background-color: var(--grey);
 }
@@ -192,12 +196,14 @@ main {
   border: 1px solid var(--grey);
   padding: 0.2rem 0.1rem;
 }
+
 .section-titles {
   display: flex;
   width: 30%;
   margin: 0 auto;
   align-items: center;
 }
+
 .section-titles img {
   width: 2rem;
   height: 1.8rem;
@@ -211,9 +217,11 @@ main {
 .section-image-1 {
   background: url("./assets/itm-2.webp");
 }
+
 .section-image-2 {
   background: url("./assets/itm-3.webp");
 }
+
 .section-image-3 {
   background: url("./assets/itm-4.webp");
 }
@@ -230,16 +238,13 @@ main {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
+
 .section-tabs p:last-child {
   color: var(--red-color);
 }
 
 .section-links {
   line-height: 1.4rem;
-}
-
-.section-image {
-  height: 23rem;
 }
 
 .more-section-links {
@@ -272,6 +277,7 @@ main {
 
 .lsl-right {
   text-align: center;
+  padding-top: 3rem;
 }
 
 .cover-img-1,
@@ -296,16 +302,11 @@ main {
   height: 15rem;
 }
 
-.lsl-right {
-  padding-top: 3rem;
-}
-
 .newsletter-container {
   height: 20rem;
 }
 
 .subscribe-content {
-  padding-left: 0;
   border: 1px solid var(--light-grey);
   padding: 4% 2rem 0 2rem;
 }
@@ -330,9 +331,6 @@ footer {
 
 footer .container-fluid {
   padding: 0;
-}
-footer p {
-  font-size: 0.9rem;
 }
 
 .footer-line {
@@ -474,7 +472,7 @@ footer p {
     padding: 0;
     height: 78%;
   }
-  
+
   .id-stories {
     height: 18rem;
     padding-left: 1rem;
