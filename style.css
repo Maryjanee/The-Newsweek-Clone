@@ -259,7 +259,7 @@ main {
 }
 
 .id-stories {
-  position:relative;
+  position: relative;
   height: 18rem;
 }
 
@@ -269,37 +269,37 @@ main {
 }
 
 .lsl-right {
-  text-align:center;
+  text-align: center;
 }
 
-.cover-img-1, .cover-img-2 {
- width: 9rem;
- height: 13rem;
+.cover-img-1,
+.cover-img-2 {
+  width: 9rem;
+  height: 13rem;
 }
 
- .cover-img-2 {
+.cover-img-2 {
   position: absolute;
   left: 5rem;
   top: 1rem;
-
 }
 
 .ls-left {
   background-color: var(--light-grey);
-  width:100%;
-  margin:0 ;
+  width: 100%;
+  margin: 0;
 }
 
 .ls-right .row {
   height: 15rem;
 }
 
-.newsletter-container{
- height:20rem;
+.newsletter-container {
+  height: 20rem;
 }
 
-.subscribe-content{
-  padding-left:0;
+.subscribe-content {
+  padding-left: 0;
   border: 1px solid var(--light-grey);
   padding: 4% 2rem 0 2rem;
 }
@@ -311,14 +311,35 @@ main {
 
 .footer-logo {
   width: 15rem;
+  margin-bottom: 1rem;
 }
 
+footer {
+  line-height: 2rem;
+}
+
+footer .container-fluid {
+  padding: 0;
+}
 footer p {
   font-size: 0.9rem;
 }
 
 .footer-line {
   border-color: var(--light-grey);
+}
+
+.footer-link-line {
+  height: 0.5rem;
+  padding-left: 0.1rem;
+  border-right: 1px solid var(--dark-grey);
+}
+
+.footer-link-container li a {
+  margin-right: 1rem;
+  color: var(--dark-grey);
+  padding-right: 1rem;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -341,20 +362,19 @@ footer p {
     background-color: var(--form-grey);
     width: 23rem;
   }
-  
+
   .ts5-img {
     background-image: url(./assets/last-article-img.png);
     background-position: center;
-    width:20rem;
-    height:10rem;
-   }
+    width: 20rem;
+    height: 10rem;
+  }
 
-   .lsl-right {
-     padding-top: 5rem;
-    
-   }
+  .lsl-right {
+    padding-top: 5rem;
+  }
 
-   .ls-right .row {
+  .ls-right .row {
     height: 20rem;
   }
 
@@ -437,23 +457,20 @@ footer p {
   .more-section-image {
     width: 100%;
   }
-  
+
   .ls-left {
     background-color: var(--light-grey);
-    width:100%;
-    padding:0;
-  
+    width: 100%;
+    padding: 0;
   }
-
-  /* .lsl-right {
-    padding-left: 10%;
-  } */
-
   .id-stories {
     height: 18rem;
     padding-left: 1rem;
     padding-right: 0;
-  
+  }
+
+  .footer-link-container li a {
+    border-right: 1px solid var(--dark-grey);
   }
 }
 
@@ -468,9 +485,9 @@ footer p {
 
   .id-stories {
     height: 18rem;
-    
-  
   }
 
+  .footer-link-container li a {
+    border-right: 1px solid var(--dark-grey);
   }
 }
