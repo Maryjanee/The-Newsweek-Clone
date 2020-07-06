@@ -261,30 +261,27 @@ main {
 .id-stories {
   position:relative;
   height: 18rem;
-  /* margin-left:1rem; */
- 
+}
+
+.id-stories-container {
+  position: relative;
+  width: 80%;
 }
 
 .lsl-right {
   text-align:center;
- /* padding-left:13%;
- padding-top:2%; */
 }
-
-/* .lsl-right h4{
-  font-size:1.1rem;
-  padding:;
-} */
 
 .cover-img-1, .cover-img-2 {
- width: 11rem;
- height: 14rem;
+ width: 9rem;
+ height: 13rem;
 }
 
-.ci2-container {
+ .cover-img-2 {
   position: absolute;
-  left: 6rem;
-  padding-top: 10%;
+  left: 5rem;
+  top: 1rem;
+
 }
 
 .ls-left {
@@ -294,7 +291,7 @@ main {
 }
 
 .ls-right .row {
-  height: 20rem;
+  height: 15rem;
 }
 
 .newsletter-container{
@@ -303,7 +300,25 @@ main {
 
 .subscribe-content{
   padding-left:0;
-  border: 1px solid green;
+  border: 1px solid var(--light-grey);
+  padding: 4% 2rem 0 2rem;
+}
+
+.footer-media {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.footer-logo {
+  width: 15rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.footer-line {
+  border-color: var(--light-grey);
 }
 
 @media screen and (min-width: 768px) {
@@ -332,8 +347,20 @@ main {
     background-position: center;
     width:20rem;
     height:10rem;
+   }
+
+   .lsl-right {
+     padding-top: 5rem;
     
    }
+
+   .ls-right .row {
+    height: 20rem;
+  }
+
+  .subscribe-content {
+    padding: 9% 2rem 0 2rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -424,8 +451,8 @@ main {
 
   .id-stories {
     height: 18rem;
-   padding-left: 0;
-  padding-right: 0;
+    padding-left: 1rem;
+    padding-right: 0;
   
   }
 }
@@ -441,7 +468,7 @@ main {
 
   .id-stories {
     height: 18rem;
-    padding-left: 6%;
+    
   
   }
 
