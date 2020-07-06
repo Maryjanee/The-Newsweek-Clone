@@ -7,7 +7,7 @@ In this project:
 1. We took a mobile first approach in styling the page ensuring it work for all screen sizes.
 2. Flex and grid properties were used for the page layout using the bootstrap v4.5 framework
 
-![screenshot](/img/screenshot.PNG)
+![screenshot](/assets/newsweek.png)
 ​​
 
 ## Built With
