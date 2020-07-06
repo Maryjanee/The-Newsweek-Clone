@@ -233,6 +233,7 @@ main {
 .section-tabs p:last-child {
   color: var(--red-color);
 }
+
 .section-links {
   line-height: 1.4rem;
 }
@@ -265,7 +266,8 @@ main {
 
 .id-stories-container {
   position: relative;
-  width: 80%;
+  width: 40%;
+  margin: 0 auto;
 }
 
 .lsl-right {
@@ -294,6 +296,10 @@ main {
   height: 15rem;
 }
 
+.lsl-right {
+  padding-top: 3rem;
+}
+
 .newsletter-container {
   height: 20rem;
 }
@@ -302,6 +308,10 @@ main {
   padding-left: 0;
   border: 1px solid var(--light-grey);
   padding: 4% 2rem 0 2rem;
+}
+
+.more-stories-heading {
+  margin-top: 3rem;
 }
 
 .footer-media {
@@ -371,7 +381,7 @@ footer p {
   }
 
   .lsl-right {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   .ls-right .row {
@@ -462,7 +472,9 @@ footer p {
     background-color: var(--light-grey);
     width: 100%;
     padding: 0;
+    height: 78%;
   }
+  
   .id-stories {
     height: 18rem;
     padding-left: 1rem;
