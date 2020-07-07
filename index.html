@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Newsweek Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <header class="row top-nav-row">
+        <div
+          class="top-nav d-flex justify-content-between align-items-center p-2"
+        >
+          <div class="d-none d-lg-block">
+            <p class="text-white font-weight-bold mt-3 ml-4">
+              <i class="fas fa-cloud-sun-rain"></i> 7° San Miguel de Tucuman, AR
+              >
+            </p>
+            <p class="text-white ml-4">Wed, Jul 01, 2020</p>
+          </div>
+          <a class="brand" href="#">
+            <img src="assets/logo.svg" alt="newsweek-logo" />
+          </a>
+          <div
+            class="cta-btns d-flex justify-content-between align-items-center"
+          >
+            <button class="d-none d-md-block login text-uppercase mr-3">
+              login
+            </button>
+            <a href="#" class="mr-4 d-sm-block d-md-none">
+              <i class="fas fa-user"></i>
+            </a>
+            <button
+              type="button"
+              class="btn mr-2 subscribe-btn text-uppercase font-weight-bold"
+            >
+              subscribe >
+            </button>
+            <button class="navbar-toggler d-block d-lg-none" type="button">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div class="navbars d-none d-lg-block">
+          <nav class="navbar-1">
+            <ul class="navbar mb-0 pl-2">
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold">U.S</a>
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >World</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >Bussiness</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >Tech & Science</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >Culture</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >Newsgeek</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >Sports</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >Health</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >The debate</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a href="#" class="nav-link text-dark font-weight-bold"
+                  >Vantage</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item py-1">
+                <a
+                  href="#"
+                  class="nav-link text-dark font-weight-bold border-right-1"
+                  >Weather</a
+                >
+              </li>
+              <li class="nav-line mt-2"></li>
+              <li class="nav-item mt-2 py-1">
+                <input type="text" class="search" placeholder="Search" />
+              </li>
+            </ul>
+          </nav>
+          <nav class="w-100">
+            <ul class="d-flex navbar-2 mb-0 pl-3">
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-uppercase font-weight-bold active text-muted"
+                  >trending</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-uppercase font-weight-bold text-muted"
+                  >donald trump</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-uppercase font-weight-bold text-muted"
+                  >joe biden</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-uppercase font-weight-bold text-muted"
+                  >china</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-uppercase font-weight-bold text-muted"
+                  >coronavirus</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-uppercase font-weight-bold text-muted"
+                  >2020 election</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <!--Main page container -->
+        <div class="container-fluid container-1 mt-3 p-0">
+          <!--Top articles single row-->
+          <div class="row">
+            <!--Middle column-->
+            <div class="col-sm-12 col-md-7 col-lg-5 mb-5">
+              <!--Top story article -->
+              <article>
+                <h4 class="section-title text-uppercase font-weight-bold">
+                  top story
+                </h4>
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a class="p-1 text-danger font-weight-bold text-uppercase" href="#">World</a>
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/itm-5.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    China Justifies Military Moves Near Islands As Asia-Pacific Feuds Heat Up
+                  </h5>
+                  <p>
+                    According to a recent Gallup Poll, 54 percent of Americans
+                    said they were concerned about the lack of social distancing
+                    as COVID-19 cases continue to rise, the highest number since
+                    April when 50 percent of Americans said they were
+                    worried.ter.
+                  </p>
+                </div>
+              </article>
+              <!--My turn section -->
+              <section class="my-turn container-fluid w-100 mt-5 mb-4">
+                <h4
+                  class="section-title text-uppercase font-weight-bold mt-title"
+                >
+                  My turn
+                </h4>
+                <div class="row">
+                  <div class="col-12 col-md-4 p-1">
+                    <img src="assets/mt-1.webp" class="w-100" alt="..." />
+                    <p class="h6 font-weight-bold my-3 text-muted">
+                      'I Struggled With Anorexia and Bulimia for More Than 10
+                      Years'
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-4 p-1">
+                    <img src="assets/mt-2.webp" class="w-100" alt="..." />
+                    <p class="h6 font-weight-bold my-3 text-muted">
+                      'I Struggled With Anorexia and Bulimia for More Than 10
+                      Years'
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-4 p-1">
+                    <img src="assets/mt-3.webp" class="w-100" alt="..." />
+                    <p class="h6 font-weight-bold my-3 text-muted">
+                      'I Struggled With Anorexia and Bulimia for More Than 10
+                      Years'
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <!--Culture & travel section-->
+              <section class="culture-travel container-fluid w-100">
+                <h4
+                  class="section-title text-uppercase font-weight-bold mt-title"
+                >
+                  Culture & travel
+                </h4>
+                <div class="row">
+                  <div class="col-12 col-md-4 p-1">
+                    <img src="assets/mt-4.webp" class="w-100" alt="..." />
+                    <p class="h6 font-weight-bold my-3 text-muted">
+                      'I Struggled With Anorexia and Bulimia for More Than 10
+                      Years'
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-4 p-1">
+                    <img src="assets/mt-5.webp" class="w-100" alt="..." />
+                    <p class="h6 font-weight-bold my-3 text-muted">
+                      'I Struggled With Anorexia and Bulimia for More Than 10
+                      Years'
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-4 p-1">
+                    <img src="assets/mt-6.webp" class="w-100" alt="..." />
+                    <p class="h6 font-weight-bold my-3 text-muted">
+                      'I Struggled With Anorexia and Bulimia for More Than 10
+                      Years'
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <!--More stories section-->
+              <section class="more-stories pl-0 container-fluid pt-3">
+                <h4 class="section-title text-uppercase font-weight-bold">
+                  My turn
+                </h4>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/ms-4.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/ms-5.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/ms-6.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/ms-7.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/ms-8.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/ms-9.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/ms-10.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/ms-11.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/mt-1.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/mt-2.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/mt-3.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block"></span>
+                <div class="row pt-3 pb-1">
+                  <div class="col-3">
+                    <img class="w-100" src="assets/mt-4.webp" alt="" />
+                  </div>
+                  <div class="col-9 pl-0">
+                    <a class="article-links font-weight-bold mb-2 d-block"
+                      >House Could Hear Slavery Reparations Bill for Black
+                      Americans This Summer</a
+                    >
+                    <p class="article-text text-muted">
+                      Texas Representative Sheila Jackson Lee said systemic
+                      racism was "a cancer on the skin and the fabric of this
+                      nation that has not been remedied" on Wednesday.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!--First column-->
+            <div
+              class="col-sm-12 col-md-5 col-lg-4 order-lg-first order-md-first"
+            >
+              <!--Featured stories-->
+              <section class="featured-stories">
+                <h4 class="section-title text-uppercase font-weight-bold">
+                  Featured stories
+                </h4>
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >U.S</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/fs-1.webp"
+                      class="card-img-top h-75"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Amid a surge in new cases of the novel coronavirus, Texas
+                    health officials confirmed the state's highest single-day
+                    increase to date on Tuesday. The number surpassed Italy's
+                    record daily total reported in March, while the country was
+                    considered the pandemic's global epicenter.
+                  </p>
+                </div>
+                <div class="article-header mt-5">
+                  <div class="image-banner">
+                    <a class="p-1 text-danger font-weight-bold" href="#"
+                      >Politics</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/fs4.webp"
+                      class="card-img-top h-75"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Amid a surge in new cases of the novel coronavirus, Texas
+                    health officials confirmed the state's highest single-day
+                    increase to date on Tuesday. The number surpassed Italy's
+                    record daily total reported in March, while the country was
+                    considered the pandemic's global epicenter.
+                  </p>
+                </div>
+                <div class="article-header mt-5">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >sports</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/fs-3.webp"
+                      class="card-img-top h-75"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Amid a surge in new cases of the novel coronavirus, Texas
+                    health officials confirmed the state's highest single-day
+                    increase to date on Tuesday. The number surpassed Italy's
+                    record daily total reported in March, while the country was
+                    considered the pandemic's global epicenter.
+                  </p>
+                </div>
+                <div class="article-header mt-5">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >world</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/fs-5.webp"
+                      class="card-img-top h-75"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    "The U.S. intends to drive a wedge between regional
+                    countries, promote militarization of the South China Sea and
+                    undermine peace and stability in the region," a Chinese
+                    Foreign Ministry spokesperson said.
+                  </p>
+                </div>
+
+                <div class="article-header mt-5">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >world</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/fs-5.webp"
+                      class="card-img-top h-75"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Amid a surge in new cases of the novel coronavirus, Texas
+                    health officials confirmed the state's highest single-day
+                    increase to date on Tuesday. The number surpassed Italy's
+                    record daily total reported in March, while the country was
+                    considered the pandemic's global epicenter.
+                  </p>
+                </div>
+              </section>
+            </div>
+            <!-- Third column -->
+            <section class="col-sm-12 col-md-12 col-lg-3 p-0 m-0 order-lg-last">
+              <!--Debate-->
+              <div class="debate container-fluid">
+                <h4 class="section-title text-uppercase font-weight-bold">
+                  Debate
+                </h4>
+                <span class="debate-line-1 d-block mb-3"></span>
+                <div class="row p-0 m-0 w-100">
+                  <div class="col-lg-3 col-sm-1 col-1 p-0">
+                    <img
+                      class="debate-img px-0 m-0 img-fluid"
+                      src="assets/debate-1.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-9 col-sm-11 col-11 ml-0 pl-2 pr-0">
+                    <a
+                      href="#"
+                      class="debate-title d-block w-100 font-weight-bold text-dark mb-2"
+                      >The U.S. Should Adopt a Regime Change Strategy for
+                      Iran</a
+                    >
+                    <p class="author text-uppercase">
+                      by <span class="font-weight-bold">scott modell</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="debate-vs">
+                  <span class="d-block mt-4"></span>
+                  <span class="d-block"></span>
+                  <div class="rounded-circle py-2">
+                    <p class="d-block text-center font-weight-bold">VS</p>
+                  </div>
+                </div>
+                <div class="row p-0 m-0 w-100">
+                  <div class="col-lg-9 col-sm-11 col-11 ml-0 pl-2 pr-0">
+                    <a
+                      href="#"
+                      class="debate-title d-block w-100 font-weight-bold text-dark mb-2"
+                      >The U.S. Should Adopt a Regime Change Strategy for
+                      Iran</a
+                    >
+                    <p class="author text-uppercase">
+                      by <span class="font-weight-bold">scott modell</span>
+                    </p>
+                  </div>
+                  <div class="col-lg-3 col-sm-1 col-1 p-0">
+                    <img
+                      class="debate-img px-0 m-0 img-fluid"
+                      src="assets/debate-2.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <span class="debate-line-2 d-block mt-3 mb-3"></span>
+              </div>
+              <!--Opinion-->
+              <div class="opinion container-fluid">
+                <h4 class="section-title text-uppercase font-weight-bold">
+                  opinion
+                </h4>
+                <div class="row p-0 m-0 w-100">
+                  <div class="col-lg-3 col-sm-1 col-2 p-0">
+                    <img
+                      class="debate-img px-0 m-0 img-fluid"
+                      src="assets/debate-3.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-9 col-sm-11 col-10 ml-0 pl-2 pr-0">
+                    <a
+                      href="#"
+                      class="debate-title d-block w-100 font-weight-bold text-dark mb-2"
+                      >The U.S. Should Adopt a Regime Change Strategy for
+                      Iran</a
+                    >
+                    <p class="author text-uppercase">
+                      by <span class="font-weight-bold">scott modell</span>
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block mb-3"></span>
+                <div class="row p-0 m-0 w-100">
+                  <div class="col-lg-3 col-sm-1 col-2 p-0">
+                    <img
+                      class="debate-img px-0 m-0 img-fluid"
+                      src="assets/debate-4.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-9 col-sm-11 col-10 ml-0 pl-2 pr-0">
+                    <a
+                      href="#"
+                      class="debate-title d-block w-100 font-weight-bold text-dark mb-2"
+                      >The U.S. Should Adopt a Regime Change Strategy for
+                      Iran</a
+                    >
+                    <p class="author text-uppercase">
+                      by <span class="font-weight-bold">scott modell</span>
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block mb-3"></span>
+                <div class="row p-0 m-0 w-100">
+                  <div class="col-lg-3 col-sm-1 col-2 p-0">
+                    <img
+                      class="debate-img px-0 m-0 img-fluid"
+                      src="assets/debate-4.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-9 col-sm-11 col-10 ml-0 pl-2 pr-0">
+                    <a
+                      href="#"
+                      class="debate-title d-block w-100 font-weight-bold text-dark mb-2"
+                      >The U.S. Should Adopt a Regime Change Strategy for
+                      Iran</a
+                    >
+                    <p class="author text-uppercase">
+                      by <span class="font-weight-bold">scott modell</span>
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block mb-3"></span>
+                <div class="row p-0 m-0 w-100">
+                  <div class="col-lg-3 col-sm-1 col-2 p-0">
+                    <img
+                      class="debate-img px-0 m-0 img-fluid"
+                      src="assets/debate-5.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-9 col-sm-11 col-10 ml-0 pl-2 pr-0">
+                    <a
+                      href="#"
+                      class="debate-title d-block w-100 font-weight-bold text-dark mb-2"
+                      >The U.S. Should Adopt a Regime Change Strategy for
+                      Iran</a
+                    >
+                    <p class="author text-uppercase">
+                      by <span class="font-weight-bold">scott modell</span>
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block mb-3"></span>
+                <div class="row p-0 m-0 w-100">
+                  <div class="col-lg-3 col-sm-1 col-2 p-0">
+                    <img
+                      class="debate-img px-0 m-0 img-fluid"
+                      src="assets/debate-6.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-9 col-sm-11 col-10 ml-0 pl-2 pr-0">
+                    <a
+                      href="#"
+                      class="debate-title d-block w-100 font-weight-bold text-dark mb-2"
+                      >The U.S. Should Adopt a Regime Change Strategy for
+                      Iran</a
+                    >
+                    <p class="author text-uppercase">
+                      by <span class="font-weight-bold">scott modell</span>
+                    </p>
+                  </div>
+                </div>
+                <span class="line-top d-block mb-3"></span>
+                <div class="row p-0 m-0 w-100">
+                  <div class="col-lg-3 col-sm-1 col-2 p-0">
+                    <img
+                      class="debate-img px-0 m-0 img-fluid"
+                      src="assets/debate-7.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-lg-9 col-sm-11 col-10 ml-0 pl-2 pr-0">
+                    <a
+                      href="#"
+                      class="debate-title d-block w-100 font-weight-bold text-dark mb-2"
+                      >The U.S. Should Adopt a Regime Change Strategy for
+                      Iran</a
+                    >
+                    <p class="author text-uppercase">
+                      by <span class="font-weight-bold">scott modell</span>
+                    </p>
+                  </div>
+                </div>
+                <!--Form-->
+                <form class="form container py-3">
+                  <div class="row form-header p-0 mx-auto w-75">
+                    <div class="col-3 p-0 w-100">
+                      <img
+                        src="assets/n-logo.jpg"
+                        class="newsweek-logo"
+                        alt=""
+                      />
+                    </div>
+                    <div class="fh-title col-9 p-0 w-100">
+                      <p class="font-weight-bold d-block">
+                        Start your day with our top 5 articles
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input
+                      class="w-75 mx-auto"
+                      type="email"
+                      placeholder="Email Address"
+                    />
+                  </div>
+                  <div class="row">
+                    <button
+                      class="nw-button w-75 mx-auto font-weight-bold text-uppercase py-1 mt-2"
+                      type="submit"
+                    >
+                      Free Signup >
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+
+          <div class="section-titles mx-auto justify-content-center">
+            <img
+              class="newsweek-logo mt-0 ml-0"
+              src="assets/n-logo.jpg"
+              alt="n-logo"
+            />
+            <p class="mt-3 ml-2 text-uppercase font-weight-bold">
+              IN THE MAGAZINE
+            </p>
+          </div>
+          <span class="line-top d-block p-0 mx-0 mt-0 mb-3"></span>
+          <div class="container-fluid">
+            <div class="row pb-5">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >july 17 issue</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/itm-1.webp"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <p
+                  class="text-uppercase w-100 bg-warning py-2 text-center font-weight-bold bg-light"
+                >
+                  See all features >
+                </p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="border section-image section-image-1 w-100"></div>
+                <div
+                  class="section-tabs bg-white d-flex align-items-center mt-2"
+                >
+                  <p
+                    class="uppercase text-white text-uppercase font-weight-bold px-2"
+                  >
+                    Cover
+                  </p>
+                  <p class="uppercase text-uppercase ml-2 font-weight-bold">
+                    Business
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="d-block section-links h5 text-dark font-weight-bold"
+                >
+                  In Good Company: 50 U.S. Businesses That Stood Out During the
+                  Pandemic
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="border section-image section-image-2 w-100"></div>
+                <div
+                  class="section-tabs bg-white d-flex align-items-center mt-2"
+                >
+                  <p class="text-white text-uppercase font-weight-bold px-2">
+                    Cover
+                  </p>
+                  <p class="text-uppercase ml-2 font-weight-bold">
+                    world
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="d-block section-links h5 text-dark font-weight-bold"
+                >
+                  BLM Global Leaders: 'It Feels Like There Is Actually Change
+                  Happening Now'
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="border section-image section-image-3 w-100"></div>
+                <div
+                  class="section-tabs bg-white d-flex align-items-center mt-2"
+                >
+                  <p class="text-white text-uppercase font-weight-bold px-2">
+                    features
+                  </p>
+                  <p class="text-uppercase ml-2 font-weight-bold">
+                    world
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="d-block section-links h5 text-dark font-weight-bold"
+                >
+                  BLM Co-Founder: 'The Entire World Is Saying Black Lives Matter
+                  Now'
+                </a>
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >july 17 issue</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ms-2.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <p
+                  class="text-uppercase w-100 bg-warning py-2 text-center font-weight-bold bg-light"
+                >
+                  See all features >
+                </p>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="border section-image section-image-3 w-100"></div>
+                <div
+                  class="section-tabs bg-white d-flex align-items-center mt-2"
+                >
+                  <p class="text-white text-uppercase font-weight-bold px-2">
+                    features
+                  </p>
+                  <p class="text-uppercase ml-2 font-weight-bold">
+                    world
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="d-block section-links h5 text-dark font-weight-bold"
+                >
+                  BLM Co-Founder: 'The Entire World Is Saying Black Lives Matter
+                  Now'
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="border section-image section-image-3 w-100"></div>
+                <div
+                  class="section-tabs bg-white d-flex align-items-center mt-2"
+                >
+                  <p class="text-white text-uppercase font-weight-bold px-2">
+                    features
+                  </p>
+                  <p class="text-uppercase ml-2 font-weight-bold">
+                    world
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="d-block section-links h5 text-dark font-weight-bold"
+                >
+                  BLM Co-Founder: 'The Entire World Is Saying Black Lives Matter
+                  Now'
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="border section-image section-image-3 w-100"></div>
+                <div
+                  class="section-tabs bg-white d-flex align-items-center mt-2"
+                >
+                  <p class="text-white text-uppercase font-weight-bold px-2">
+                    features
+                  </p>
+                  <p class="text-uppercase ml-2 font-weight-bold">
+                    world
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="d-block section-links h5 text-dark font-weight-bold"
+                >
+                  BLM Co-Founder: 'The Entire World Is Saying Black Lives Matter
+                  Now'
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-titles mx-auto justify-content-center">
+            <img
+              class="newsweek-logo mt-0 ml-0"
+              src="assets/n-logo.jpg"
+              alt="n-logo"
+            />
+            <p class="mt-3 ml-2 text-uppercase font-weight-bold">
+              Editors pics
+            </p>
+          </div>
+          <span class="line-top d-block p-0 mx-0 mt-0 mb-3"></span>
+
+          <section class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >culture</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ep-1.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Despite the secrecy and rumors surrounding this top-secret
+                    U.S. military facility in the Nevada desert, here are some
+                    things we do know about Area 51.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >world</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ep-2.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Oxford COVID-19 Vaccine Could Give People Protection 'For
+                    Several Years'
+                  </h5>
+                  <p>
+                    The University of Oxford study leader said the vaccine could
+                    offer better protection than "naturally-acquired immunity".
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >culture</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ep3.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Ken Cuccinelli Calls on NYPD Officers to Join DHS If 'NYC
+                    Doesn't Want You'
+                  </h5>
+                  <p>
+                    New York City lawmakers have approved a 2021 budget that
+                    will see $1 billion slashed from NYPD funding.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >culture</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ep-4.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Has U.K. Reached Point of No Return In Brexit Negotiations
+                    With the E.U.?
+                  </h5>
+                  <p>
+                    Despite the secrecy and rumors surrounding this top-secret
+                    U.S. military facility in the Nevada desert, here are some
+                    things we do know about Area 51.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >culture</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ep-1.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Despite the secrecy and rumors surrounding this top-secret
+                    U.S. military facility in the Nevada desert, here are some
+                    things we do know about Area 51.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >culture</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ep-1.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Despite the secrecy and rumors surrounding this top-secret
+                    U.S. military facility in the Nevada desert, here are some
+                    things we do know about Area 51.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >culture</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ep-1.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Despite the secrecy and rumors surrounding this top-secret
+                    U.S. military facility in the Nevada desert, here are some
+                    things we do know about Area 51.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="article-header">
+                  <div class="image-banner">
+                    <a
+                      class="p-1 text-danger font-weight-bold text-uppercase"
+                      href="#"
+                      >culture</a
+                    >
+                  </div>
+                  <div class="article-image">
+                    <img
+                      src="assets/ep-1.webp"
+                      class="card-img-top img-fluid"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mt-2 font-weight-bold">
+                    Texas Daily COVID-19 Cases Top Italy's Record When It Was
+                    Global Epicenter
+                  </h5>
+                  <p>
+                    Despite the secrecy and rumors surrounding this top-secret
+                    U.S. military facility in the Nevada desert, here are some
+                    things we do know about Area 51.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <span class="line-top d-block p-0 mx-0 mt-0 mb-3"></span>
+          <h4 class="more-stories-heading h4 font-weight-bold ml-3">U.S.</h4>
+          <section class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-1.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3 text-muted">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-2.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                  <div
+                    class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0 more-section-image"
+                  >
+                    <img
+                      src="assets/us-3.webp"
+                      class="more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-4.webp"
+                      class="mx-auto px-0 more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8 mr-0 pr-0">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-6.webp"
+                      class="more-section-image mx-auto px-0"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <span class="line-top d-block p-0 mx-0 mt-0 mb-3"></span>
+          <h4 class="more-stories-heading h4 font-weight-bold ml-3">U.S.</h4>
+          <section class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-1.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3 text-muted">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-2.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                  <div
+                    class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0 more-section-image"
+                  >
+                    <img
+                      src="assets/us-3.webp"
+                      class="more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-4.webp"
+                      class="mx-auto px-0 more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8 mr-0 pr-0">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-6.webp"
+                      class="more-section-image mx-auto px-0"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <span class="line-top d-block p-0 mx-0 mt-0 mb-3"></span>
+          <h4 class="more-stories-heading h4 font-weight-bold ml-3">U.S.</h4>
+          <section class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-1.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3 text-muted">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-2.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                  <div
+                    class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0 more-section-image"
+                  >
+                    <img
+                      src="assets/us-3.webp"
+                      class="more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-4.webp"
+                      class="mx-auto px-0 more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8 mr-0 pr-0">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-6.webp"
+                      class="more-section-image mx-auto px-0"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <span class="line-top d-block p-0 mx-0 mt-0 mb-3"></span>
+          <h4 class="more-stories-heading h4 font-weight-bold ml-3">U.S.</h4>
+          <section class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-1.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3 text-muted">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-2.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                  <div
+                    class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0 more-section-image"
+                  >
+                    <img
+                      src="assets/us-3.webp"
+                      class="more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-4.webp"
+                      class="mx-auto px-0 more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8 mr-0 pr-0">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-6.webp"
+                      class="more-section-image mx-auto px-0"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <span class="line-top d-block p-0 mx-0 mt-0 mb-3"></span>
+          <h4 class="more-stories-heading h4 font-weight-bold ml-3">U.S.</h4>
+          <section class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-1.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3 text-muted">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-2.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                  <div
+                    class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0 more-section-image"
+                  >
+                    <img
+                      src="assets/us-3.webp"
+                      class="more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-4.webp"
+                      class="mx-auto px-0 more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8 mr-0 pr-0">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-6.webp"
+                      class="more-section-image mx-auto px-0"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <span class="line-top d-block p-0 mx-0 mt-0 mb-3"></span>
+          <h4 class="more-stories-heading h4 font-weight-bold ml-3">U.S.</h4>
+          <section class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-1.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3 text-muted">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="assets/us-2.webp" class="w-100" alt="..." />
+                <h4 class="h4 font-weight-bold my-3">
+                  National Guard Could Remain Activated to Help With COVID-19
+                  for One Year
+                </h4>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                  <div
+                    class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0 more-section-image"
+                  >
+                    <img
+                      src="assets/us-3.webp"
+                      class="more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-4.webp"
+                      class="mx-auto px-0 more-section-image"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8 mr-0 pr-0">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+                <span class="line-top d-block p-0 mx-0 mt-3 mb-3"></span>
+                <div class="row">
+                  <div class="col-sm-2 col-lg-3 col-md-4 mr-0 pr-0">
+                    <img
+                      src="assets/us-6.webp"
+                      class="more-section-image mx-auto px-0"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-10 col-lg-9 col-md-8">
+                    <a class="h4 font-weight-bold d-block more-section-links">
+                      National Guard Could Remain Activated to Help With
+                      COVID-19 for One Year
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Last section-->
+
+          <section class="container-fluid">
+            <div class="row">
+              <!--Last section left-->
+              <div class="col-lg-8">
+                <h4
+                  class="h6 text-uppercase font-weight-bold more-stories-heading"
+                >
+                  Subscribe
+                </h4>
+                <div class="row ls-left col-md-12">
+                  <div
+                    class="col-lg-4 col-md-3 col-sm-12 id-stories h-100 pt-4"
+                  >
+                    <div class="id-stories-container d-flex">
+                      <img
+                        class="cover-img-1"
+                        src="./assets/cover-2.jpg"
+                        alt=""
+                      />
+                      <img
+                        class="cover-img-2"
+                        src="./assets/cover.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-9 col-sm-12 lsl-right">
+                    <h4 class="font-weight-bold d-block w-50 mx-auto">
+                      In-depth Stories You Don't See Elsewhere About Topics You
+                      Want to Read!
+                    </h4>
+                    <p class="d-block w-50 mx-auto">
+                      All Access + Weekly Delivery. Choose A Membership That's
+                      Perfect for You!
+                    </p>
+                    <button
+                      class="nw-button font-weight-bold py-1 px-3 text-uppercase last-btn"
+                    >
+                      subscribe >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--Last section right-->
+              <div class="col-lg-4 ls-right col-sm-12">
+                <h4
+                  class="h6 text-uppercase font-weight-bold more-stories-heading"
+                >
+                  Subscribe
+                </h4>
+                <div class="row pb-3 newsletter-container px-2">
+                  <div
+                    class="col-md-2 col-lg-5 ts5-img col-sm-12 h-100 d-none d-md-block"
+                  ></div>
+                  <div
+                    class="col-md-10 col-lg-7 col-sm-12 subscribe-content px-3"
+                  >
+                    <h4 class="font-weight-bold text-center">The Starting 5</h4>
+                    <p class="text-center">
+                      See why nearly a quarter of a million subscribers begin
+                      their day with the Starting 5.
+                    </p>
+                    <input
+                      class="w-100 py-1 pl-1 mx-auto"
+                      type="email"
+                      placeholder="Email Address"
+                    />
+
+                    <button
+                      class="nw-button w-100 mx-auto font-weight-bold text-uppercase py-1 mt-2"
+                      type="submit"
+                    >
+                      Free Signup >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <span class="line-top d-block p-0 mx-0 mt-0 mb-3 footer-line"></span>
+      <footer>
+        <div class="container-fluid d-block d-md-flex align-items-baseline">
+          <img class="footer-logo" src="./assets/logo-red.svg" alt="logo" />
+          <p class="text-muted">© 2020 NEWSWEEK</p>
+          <ul class="d-flex ml-auto">
+            <li class="">
+              <a href="#">
+                <img class="footer-media" src="./assets/facebook.svg" alt="" />
+              </a>
+            </li>
+            <li class="d-block nav-line"></li>
+            <li class="pl-2">
+              <a href="#">
+                <img class="footer-media" src="./assets/twitter.svg" alt="" />
+              </a>
+            </li>
+            <li class="pl-2">
+              <a href="#">
+                <img class="footer-media" src="./assets/intagram.svg" alt="" />
+              </a>
+            </li>
+            <li class="pl-2">
+              <a href="#">
+                <img class="footer-media" src="./assets/tumblr.svg" alt="" />
+              </a>
+            </li>
+            <li class="pl-2">
+              <a href="#">
+                <img class="footer-media" src="./assets/linkedin.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span class="d-flex line-top"></span>
+        <div class="d-flex align-items-center flex-wrap">
+          <p class="ml-2">Editions:</p>
+          <ul class="d-flex align-items-center footer-link-container flex-wrap">
+            <li><a class="text-muted" href="#">U.S Edition</a></li>
+            <li><a href="#">日本</a></li>
+            <li><a href="#">Pakistan</a></li>
+            <li><a href="#">Polska </a></li>
+            <li><a href="#">România</a></li>
+          </ul>
+        </div>
+        <ul
+          class="footer-link-container flex-wrap d-flex align-items-center justify-content-space-between"
+        >
+          <li>
+            <a href="#">About Us</a>
+            <!-- <span class="d-block footer-link-line px-1"></span> -->
+          </li>
+
+          <li><a href="#">Corrections</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Editorial Guidelines</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Copyright</a></li>
+          <li><a href="#">Terms & conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Terms of sale</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Announcement</a></li>
+          <li><a href="#">Consent preferences</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
