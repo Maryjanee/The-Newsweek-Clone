@@ -21,7 +21,7 @@ In this project:
 ## Live Demo
 
 ​
-[Live Demo Link](https://rawcdn.githack.com/Maryjanee/The-Next-Web-Clone/378893a7a7bf58dad79c6db91fb7366fe875302e/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Maryjanee/The-Newsweek-Clone/4d19c93d89324e5527e8139e305dc14b47f3da9b/index.html)
 ​
 
 ## Getting Started
